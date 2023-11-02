@@ -1,6 +1,10 @@
 return {
   -- Plugins
   {
+    "kevinhwang91/nvim-bqf",
+    ft = "qf",
+  },
+  {
     "matze/vim-move",
     event = "VeryLazy",
   },
@@ -9,8 +13,8 @@ return {
     event = "VeryLazy",
   },
   {
-    "kevinhwang91/nvim-bqf",
-    ft = "qf"
+    "ThePrimeagen/vim-be-good",
+    event = "VeryLazy",
   },
   {
     -- To map <C-a> as shortcut to accept a new suggestion ->
