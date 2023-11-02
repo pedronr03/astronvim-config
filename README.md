@@ -34,3 +34,6 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/us
 ```shell
 nvim
 ```
+
+#### Utils
+- [How to use the Windows clipboard from WSL?](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
