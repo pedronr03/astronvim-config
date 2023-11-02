@@ -9,6 +9,17 @@ return {
     event = "VeryLazy",
   },
   {
+    "kevinhwang91/nvim-bqf",
+    ft = "qf"
+  },
+  {
+    -- To map <C-a> as shortcut to accept a new suggestion ->
+    -- imap <silent><script><expr> <C-a> copilot#Accept("\<CR>")
+    -- let g:copilot_no_tab_map = v:true
+    "github/copilot.vim",
+    event = "VeryLazy",
+  },
+  {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {
@@ -34,22 +45,17 @@ return {
     opts = {},
   },
   {
-    "roobert/surround-ui.nvim",
-    dependencies = {
-      "kylechui/nvim-surround",
-      "folke/which-key.nvim",
-    },
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
     config = function()
-      require("surround-ui").setup({
-        root_key = "S"
-      })
-    end,
+        require("nvim-surround").setup({})
+    end
   },
 
   -- Themes
   {
     "folke/tokyonight.nvim",
-    as = "tokyonight",
     opts = {
       style = "night"
     },
