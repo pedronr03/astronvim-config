@@ -18,4 +18,7 @@ return {
     ["n"] = { "nzzzv", desc = "Repeat last search, centralizing cursor on buffer", },
     ["N"] = { "Nzzzv", desc = "Repeat last search, but in opposite direction of original search, centralizing cursor on buffer", },
   },
+  i = {
+    ["<C-a>"] = { "copilot#Accept('<CR>')", noremap = true, silent = true, expr=true, replace_keycodes = false, desc = "Accept a new suggestion", },
+  }
 }
